@@ -44,3 +44,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define OLED_BRIGHTNESS 128
 #undef OLED_FONT_H
 #define OLED_FONT_H "keyboards/splitkb/aurora/corne/glcdfont.c"
+
+#define VIAL_KEYBOARD_UID {0xE4, 0x99, 0x35, 0x98, 0xBC, 0xC5, 0xA0, 0x11}
+#define VIAL_UNLOCK_COMBO_ROWS {4, 9}
+#define VIAL_UNLOCK_COMBO_COLS {4, 4}

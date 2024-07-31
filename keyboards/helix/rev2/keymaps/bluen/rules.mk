@@ -30,3 +30,6 @@ ifeq ($(strip $(OLED_ENABLE)), yes)
     SRC += oled_display.c
 endif
 SRC += oneshot.c
+
+VIA_ENABLE = yes
+VIAL_ENABLE = yes
