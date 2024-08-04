@@ -15,5 +15,8 @@ VIAL_ENABLE         = yes
 LTO_ENABLE          = yes
 COMBO_ENABLE        = no
 
-QMK_SETTINGS        = no
-MOUSEKEY_ENABLE     = no
+QMK_SETTINGS        = yes
+MOUSEKEY_ENABLE     = yes
+EXTRAKEY_ENABLE     = yes
+
+CONVERT_TO = helios

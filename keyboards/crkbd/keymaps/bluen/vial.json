@@ -23,5 +23,15 @@
           [{"r":-30,"rx":11.1,"y":-5.05,"x":0.4,"h":1.5},"7,5"],
           [{"r":-15,"rx":12,"ry":9.1,"y":-4.85,"x":-0.5},"7,4"]
       ]
-  }
+  },
+  "customKeycodes": [
+      {"name": "RGB_SOLID", "title": "RGB solid background", "shortName": "RGB_SOLD"},
+      {"name": "OSM_SHIFT", "title": "OSM shift", "shortName": "OS_SHFT"},
+      {"name": "OSM_CRTL", "title": "OSM control", "shortName": "OS_CTRL"},
+      {"name": "OSM_ALT", "title": "OSM option/alt", "shortName": "OS_ALT"},
+      {"name": "OSM_GUI", "title": "OSM win/cmd/super", "shortName": "OS_GUI"},
+      {"name": "OLED_TOGGLE", "title": "Toggle OLED", "shortName": "OL_TGL"},
+      {"name": "OLED_32", "title": "OLED brightness 32", "shortName": "OL_32"},
+      {"name": "OLED_64", "title": "OLED brightness 64", "shortName": "OL_64"}
+  ]
 }
