@@ -41,7 +41,7 @@ oneshot_state os_cmd_state  = OS_UP_UNQUEUED;
 enum layer_names { _BASE, _LOWER, _RAISE, _ADJUST };
 
 enum custom_keycodes {
-    RGB_SLD = SAFE_RANGE,
+    RGB_SLD = QK_KB_0,
     OS_SHFT,
     OS_CTRL,
     OS_ALT,
