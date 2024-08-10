@@ -3,6 +3,16 @@
   "vendorId": "0x4653",
   "productId": "0x0001",
   "matrix": { "rows": 8, "cols": 6 },
+  "customKeycodes": [
+      {"name": "RGB solid", "title": "RGB solid", "shortName": "RGB_SLD"},
+      {"name": "O_SFT", "title": "Callum one-shot Shift", "shortName": "OS_SHFT"},
+      {"name": "O_CTL", "title": "Callum one-shot Control", "shortName": "OS_CTRL"},
+      {"name": "O_ALT", "title": "Callum one-shot Alt/Option", "shortName": "OS_ALT"},
+      {"name": "O_CMD", "title": "Callum one-shot Cmd/Gui/Win", "shortName": "OS_CMD"},
+      {"name": "O_TGL", "title": "Toggle OLED", "shortName": "OL_TGL"},
+      {"name": "O_32", "title": "OLED Brightness 32", "shortName": "OL_32"},
+      {"name": "O_64", "title": "OLED Brightness 64", "shortName": "OL_64"}
+  ],
   "layouts": {
       "keymap": [
           [{"y":1,"x":3.5},"0,3",{"x":7.5},"4,3"],
@@ -23,15 +33,5 @@
           [{"r":-30,"rx":11.1,"y":-5.05,"x":0.4,"h":1.5},"7,5"],
           [{"r":-15,"rx":12,"ry":9.1,"y":-4.85,"x":-0.5},"7,4"]
       ]
-  },
-  "customKeycodes": [
-      {"name": "RGB_SOLID", "title": "RGB solid background", "shortName": "RGB_SOLD"},
-      {"name": "OSM_SHIFT", "title": "OSM shift", "shortName": "OS_SHFT"},
-      {"name": "OSM_CRTL", "title": "OSM control", "shortName": "OS_CTRL"},
-      {"name": "OSM_ALT", "title": "OSM option/alt", "shortName": "OS_ALT"},
-      {"name": "OSM_GUI", "title": "OSM win/cmd/super", "shortName": "OS_GUI"},
-      {"name": "OLED_TOGGLE", "title": "Toggle OLED", "shortName": "OL_TGL"},
-      {"name": "OLED_32", "title": "OLED brightness 32", "shortName": "OL_32"},
-      {"name": "OLED_64", "title": "OLED brightness 64", "shortName": "OL_64"}
-  ]
+  }
 }
