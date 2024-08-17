@@ -213,9 +213,9 @@ void render_status(void) {
     // Host Keyboard LED Status
     oled_write_P(PSTR("\n"), false);
     led_t led_state = host_keyboard_led_state();
-    oled_write_P(led_state.num_lock ? PSTR("NUM") : PSTR("      "), false);
-    oled_write_P(led_state.caps_lock ? PSTR("CAP") : PSTR("    "), false);
-    oled_write_P(led_state.scroll_lock ? PSTR("SCL") : PSTR("    "), false);
+    oled_write_P(led_state.num_lock    ? PSTR(" NUM ") : PSTR("     "), false);
+    oled_write_P(led_state.caps_lock   ? PSTR(" CAP ") : PSTR("     "), false);
+    oled_write_P(led_state.scroll_lock ? PSTR(" SCL ") : PSTR("     "), false);
 }
 
 bool oled_task_user(void) {
