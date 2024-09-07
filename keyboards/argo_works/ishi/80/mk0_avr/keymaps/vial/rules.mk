@@ -2,7 +2,7 @@ VIA_ENABLE = yes
 VIAL_ENABLE = yes
 LTO_ENABLE = yes
 
-ifeq ($(strip $(CONVERT_TO)), )
+ifeq ($(strip $(MCU)), atmega32u4)
     MAGIC_ENABLE = no
     SPACE_CADET_ENABLE = no
     COMBO_ENABLE = no

@@ -81,12 +81,10 @@ subcommands = [
     'qmk.cli.new.keymap',
     'qmk.cli.painter',
     'qmk.cli.pytest',
-    'qmk.cli.test.c',
     'qmk.cli.userspace.add',
     'qmk.cli.userspace.compile',
     'qmk.cli.userspace.doctor',
     'qmk.cli.userspace.list',
-    'qmk.cli.userspace.path',
     'qmk.cli.userspace.remove',
     'qmk.cli.via2json',
 ]

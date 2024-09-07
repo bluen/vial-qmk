@@ -1,4 +1,5 @@
 {
+  "name": "Vial ATmega32u4 Example",
   "matrix": {
     "rows": 2,
     "cols": 2

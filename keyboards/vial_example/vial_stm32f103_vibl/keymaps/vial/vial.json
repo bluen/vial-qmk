@@ -1,4 +1,5 @@
 {
+  "name": "Vial STM32F103-vibl Example",
   "matrix": {
     "rows": 2,
     "cols": 2
