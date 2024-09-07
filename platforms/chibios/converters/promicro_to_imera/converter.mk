@@ -7,4 +7,8 @@ BOOTLOADER := rp2040
 SERIAL_DRIVER ?= vendor
 WS2812_DRIVER ?= vendor
 BACKLIGHT_DRIVER ?= software
+<<<<<<< HEAD
 OPT_DEFS += -DUSB_VBUS_PIN=19U
+=======
+OPT_DEFS += -DUSB_VBUS_PIN=19U
+>>>>>>> splitkb/main
