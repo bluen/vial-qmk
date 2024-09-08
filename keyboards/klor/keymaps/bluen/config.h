@@ -5,7 +5,7 @@ see https://docs.qmk.fm/#/feature_split_keyboard?id=setting-handedness
 for more options.
 */
 
-#define MASTER_RIGHT
+#define MASTER_LEFT
 // #define MASTER_RIGHT
 
 //#define TAPPING_TERM 170
