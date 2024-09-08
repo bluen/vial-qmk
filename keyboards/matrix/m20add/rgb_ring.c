@@ -18,13 +18,9 @@
 
 #include "rgb_ring.h"
 
-#include <stdint.h>
-#include <stdbool.h>
 #include <string.h>
 #include "quantum.h"
 #include "rgblight.h"
-#include "timer.h"
-#include "action.h"
 #include "drivers/led/issi/is31fl3731.h"
 #include "i2c_master.h"
 
@@ -361,7 +357,7 @@ static void custom_effects(void)
     effect_funcs[rgb_ring.effect]();
 }
 
-void setleds_custom(rgb_led_t *start_led, uint16_t num_leds)
+void rgblight_call_driver(rgb_led_t *start_led, uint8_t num_leds)
 {
     if (rgb_ring.state != RING_STATE_QMK) {
         return;
@@ -371,10 +367,6 @@ void setleds_custom(rgb_led_t *start_led, uint16_t num_leds)
         is31fl3731_set_color(i, start_led[i].r, start_led[i].g, start_led[i].b);
     }
 }
-
-const rgblight_driver_t rgblight_driver = {
-    .setleds = setleds_custom,
-};
 
 
 void rgb_ring_init(void)
@@ -405,7 +397,7 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record)
 {
     if (record->event.pressed) {
         switch(keycode) {
-            case RGB_MOD:
+            case RGB_MODE_FORWARD:
                 if (rgb_ring.state == RING_STATE_INIT) {
                     // in testing mode, do nothing
                     return false;
@@ -423,7 +415,7 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record)
                     }
                 }
                 break;
-            case RGB_RMOD:
+            case RGB_MODE_REVERSE:
                 if (rgb_ring.state == RING_STATE_INIT) {
                     // in testing mode, do nothing
                     return false;

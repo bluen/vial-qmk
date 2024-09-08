@@ -1,8 +1,10 @@
 # doio/kb04
 
-![doio/kb04](https://i.imgur.com/lqABZw4h.png)
+![doio/kb04](https://cdn.shopify.com/s/files/1/0463/5980/6101/products/4_f40396cc-ea72-47a5-887f-bbeeb4023b11_1100x.png?v=1654787686)
 
 A macropad that have 4-key keyboard made by DOIO, which controlled by an APM32F103CBT6 chipset. The keyboard features per-key RGB and 1 encoder.
+
+There are four keymaps: default, via, vial, and vial-inverted. vial-inverted is intended for use when the keyboard is plugged in upside down (with the encoder at the top).
 
 * Keyboard Maintainer: [filmstarr](https://github.com/filmstarr)
 * Hardware Supported: DOIO Knob Board - KB04
@@ -10,11 +12,11 @@ A macropad that have 4-key keyboard made by DOIO, which controlled by an APM32F1
 
 Make example for this keyboard (after setting up your build environment):
 
-    qmk compile -kb doio/kb04 -km default
+    make doio/kb04:default
 
 Flashing example for this keyboard:
 
-    qmk flash -kb doio/kb04 -km default
+    make doio/kb04:default:flash
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 

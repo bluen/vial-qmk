@@ -1,37 +1,61 @@
 {
     "manufacturer": "Tweetys Wild Thinking",
-    "keyboard_name": "Lotus 58 Glow",
+    "keyboard_name": "Lotus 58 Glow (QMK)",
     "maintainer": "TweetyDaBird",
     "bootloader_instructions": "Short marked pads on PCB, or hold top-outer key when plugging in each hand.",
+    "build": {
+        "lto": true
+    },
     "diode_direction": "COL2ROW",
+    "encoder": {
+        "rotary": [
+            {"pin_a": "F5", "pin_b": "F4", "resolution": 2}
+        ]
+    },
     "features": {
         "bootmagic": true,
         "command": false,
         "console": false,
-        "encoder": true,
         "extrakey": true,
         "mousekey": true,
         "nkro": true,
         "oled": true,
+        "encoder": true,
         "rgblight": true,
+        "split": true,
         "tri_layer": true
     },
+    "matrix_pins": {
+        "cols": ["B1", "B2", "B3", "B6", "F7", "F6"],
+        "rows": ["D4", "C6", "D7", "E6", "B4"]
+    },
+    "pin_compatible": "promicro",
+    "processor": "atmega32u4",
     "rgblight": {
-        "default": {
-            "val": 87
-        },
         "led_count": 70,
-        "max_brightness": 175,
-        "sleep": true,
         "split": true,
-        "split_count": [35, 35]
+        "split_count": [35, 35],
+        "sleep": true,
+        "max_brightness": 175
+    },
+    "ws2812": {
+        "pin": "D3"
     },
     "split": {
         "bootmagic": {
             "matrix": [5, 0]
         },
         "enabled": true,
+        "encoder": {
+            "right": {
+                "rotary": [
+                    {"pin_a": "F4", "pin_b": "F5", "resolution": 2}
+                ]
+            }
+        },
+        "soft_serial_pin": "D2",
         "transport": {
+            "protocol": "serial",
             "sync": {
                 "indicators": true,
                 "layer_state": true,
@@ -46,10 +70,10 @@
     },
     "url": "https://lectronz.com/stores/tweetys-wild-thinking",
     "usb": {
-        "device_version": "1.2.3",
-        "force_nkro": true,
+        "vid": "0xFEED",
         "pid": "0x23B0",
-        "vid": "0xFEED"
+        "device_version": "1.2.3",
+        "force_nkro": true
     },
     "layouts": {
         "LAYOUT": {

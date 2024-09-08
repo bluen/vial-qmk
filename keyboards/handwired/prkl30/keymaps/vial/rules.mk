@@ -8,6 +8,6 @@ EXTRAKEY_ENABLE = yes
 CONSOLE_ENABLE = no
 COMMAND_ENABLE = no
 
-ifeq ($(strip $(CONVERT_TO)), )
+ifeq ($(strip $(MCU)), atmega32u4)
     QMK_SETTINGS = no
 endif

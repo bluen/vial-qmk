@@ -33,4 +33,4 @@
 
 // LEDs
 #define D5 24U // Power LED, default-on
-#define B0 18U // Unconnecte
+#define B0 18U // Unconnected

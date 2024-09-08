@@ -3,7 +3,7 @@ VIAL_ENABLE = yes
 
 VIALRGB_ENABLE = yes
 
-ifeq ($(strip $(CONVERT_TO)), )
+ifeq ($(strip $(MCU)), atmega32u4)
     QMK_SETTINGS = no
     COMBO_ENABLE = no
     MOUSEKEY_ENABLE = no

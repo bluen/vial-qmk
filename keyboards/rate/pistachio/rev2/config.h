@@ -21,7 +21,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Split hand configration */
 #define SPLIT_HAND_MATRIX_GRID D4,D3
-#define SPLIT_HAND_MATRIX_GRID_LOW_IS_LEFT
 
 #define RGBLIGHT_LAYERS
 
@@ -30,3 +29,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #else
   #define USB_MAX_POWER_CONSUMPTION 100
 #endif
+
+/* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
+#define LOCKING_SUPPORT_ENABLE
+/* Locking resynchronize hack */
+#define LOCKING_RESYNC_ENABLE

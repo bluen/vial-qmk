@@ -18,11 +18,6 @@
 *.lst
 *.map
 *.o
-*.a
-*.so
-*.dylib
-*.dll
-*.la
 *.stackdump
 *.sym
 
@@ -38,7 +33,6 @@ quantum/version.h
 
 # DD config at wrong location
 /keyboards/**/keymaps/*/info.json
-/keyboards/**/keymaps/*/keyboard.json
 
 # Old-style QMK Makefiles
 /keyboards/**/Makefile

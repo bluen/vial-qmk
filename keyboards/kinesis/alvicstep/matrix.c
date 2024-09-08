@@ -28,6 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "util.h"
 #include "matrix.h"
 #include "led.h"
+#include "config.h"
 
 #ifndef DEBOUNCE
 #   define DEBOUNCE	5
@@ -115,7 +116,7 @@ uint8_t matrix_scan(void)
         if (matrix_debouncing[i] != row) {
             matrix_debouncing[i] = row;
             if (debouncing) {
-                dprintf("bounce!: %02X\n", debouncing);
+                debug("bounce!: "); debug_hex(debouncing); debug("\n");
             }
             debouncing = DEBOUNCE;
         }
